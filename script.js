@@ -25,3 +25,16 @@ function showLess(sectionId) {
     container.querySelector('.show-less-btn').style.display = 'none';
     container.querySelector('.load-more-btn').style.display = 'inline-block';
 }
+
+
+(function(d, t) {
+    var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+    v.onload = function() {
+        window.voiceflow.chat.load({
+            verify: { projectID: '6695857723cb7050aa602032' },
+            url: 'https://general-runtime.voiceflow.com',
+            versionID: 'production'
+        });
+    }
+    v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+})(document, 'script');
