@@ -1,0 +1,164 @@
+/* Basic Reset */
+html, body, h1, ul, li, a, form, label, input, textarea, button {
+    
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #14191E;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #14191E;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+#contact-form {
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1a2229;
+}
+
+header h1 {
+    margin: 0;
+    color: #4ecca3;
+}
+
+button {
+    background-color: #4ecca3;
+    color: #14191E;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #37b892;
+}
+
+footer {
+    background-color: #14191E;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+/* Navigation Styles */
+nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #4ecca3;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Button Style */
+.btn {
+    background-color: #4ecca3;
+    color: #14191E;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: opacity 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Project List Styles */
+.project-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-summary {
+    background: #1a2229;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    width: calc(50% - 40px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.project-summary h3 {
+    color: #4ecca3;
+}
+
+.project-summary p {
+    color: #ccc;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #14191E;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .project-summary {
+        width: 100%;
+    }
+}
