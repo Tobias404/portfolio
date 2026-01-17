@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+       <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Post Title</title>
-    <link rel="stylesheet" href="blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Natural Language Processing using FastText</h1>
+        <div class="header-content page">
+            <div class="branding">
+                <h1>Natural Language Processing using FastText</h1>
+                <p class="tagline">Text embeddings and classification with FastText.</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="./projects">Projects</a></li>
+                    <li><a href="./skills">Skills</a></li>
+                    <li><a href="./blogs">Blogs</a></li>
+                    <li><a href="./contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <article>
-        <p class="post-date">Posted on: February 10, 2024</p>
-        <section class="post-content">
+    <main class="page">
+        <article class="section-card post-article">
+            <p class="post-date">Posted on: February 10, 2024</p>
+            <section class="post-content">
             
         <p>This blog explores an academic endeavor involving the FastText method applied to a news reports dataset. The project's objective was to optimize and evaluate FastText for categorizing news into sports, world, business, and science & technology. Through meticulous application on word and character levels, this study leverages FastText's potential for deep linguistic analysis and categorization.</p>
 
@@ -39,11 +57,14 @@
         <p>This blog encapsulates the journey and findings of the project, aiming to offer insights into the practical application of FastText in text classification, challenges encountered, and the broader implications of this work in the realm of data science and artificial intelligence.</p>
 
 
-        </section>
-    </article>
+            </section>
+        </article>
+    </main>
     <script src="script.js"></script>
     <footer>
-        <p>&copy; 2026 Tobias Lundholm Skjervedal</p>
+        <div class="page">
+            <p>&copy; 2026 Tobias Lundholm Skjervedal</p>
+        </div>
     </footer>
 </body>
 </html>

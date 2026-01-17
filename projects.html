@@ -4,90 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Data Science Projects</title>
-    <link rel="stylesheet" href="projects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Collection Of Projects</h1>
-        <nav>
-            <ul>
-                <li><a href="./">Home</a></li>
-                <li><a href="./skills">Skills</a></li>
-                <li><a href="./blogs">Blogs</a></li>
-                <li><a href="./contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-content page">
+            <div class="branding">
+                <h1>Collection Of Projects</h1>
+                <p class="tagline">Data science, machine learning, and software builds.</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="./skills">Skills</a></li>
+                    <li><a href="./blogs">Blogs</a></li>
+                    <li><a href="./contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="projects">
-        <h2>Data Science Projects</h2>
-        <div class="projects-container">
-            <div class="card">
-                <h3>Finding correlation bewteen proxy heart rate data and frustration</h3>
-                <p>Examined the interaction between frustration levels and heart rate during two-person puzzle-solving tasks.</p>
-                <a href="./heart_data">Read More</a>
+    <main class="page">
+        <section id="projects" class="section-card">
+            <h2>Data Science Projects</h2>
+            <div class="projects-container">
+                <div class="card">
+                    <h3>Finding correlation bewteen proxy heart rate data and frustration</h3>
+                    <p>Examined the interaction between frustration levels and heart rate during two-person puzzle-solving tasks.</p>
+                    <a href="./heart_data">Read More</a>
+                </div>
+                <div class="card">
+                    <h3>Regression and classification on french wine</h3>
+                    <p>Used regression to predict the alcohol content of wine. And classification
+                        to predict the origin of the wines.</p>
+                    <a href="./french_wine">Read More</a>
+                </div>
+                <div class="card">
+                    <h3>AI Pacman with deep-Q-learning</h3>
+                    <p>Used deep-Q-learning to train an AI pacman.</p>
+                    <a href="./AI_pacman">Read More</a>
+                </div>
+                <div class="card">
+                    <h3>Natural Language Processing using FastText</h3>
+                    <p>Using FastText and euclidian vector differnce to predict category
+                        of words.</p>
+                    <a href="./NLP_FT">Read More</a>
+                </div>
+                <div class="card">
+                    <h3>Data Processing of ETF's in R</h3>
+                    <p>Using data proccesing in R, make statistical analysis of 95 ETF's.</p>
+                    <a href="./ETF_R">Read More</a>
+                </div>
             </div>
-            <div class="card">
-                <h3>Regression and classification on french wine</h3>
-                <p>Used regression to predict the alcohol content of wine. And classification 
-                    to predict the origin of the wines. </p>
-                <a href="./french_wine">Read More</a>
-            </div>
-           
-            <div class="card">
-                <h3>AI Pacman with deep-Q-learning</h3>
-                <p>Used deep-Q-learning to train an AI pacman.</p>
-                <a href="./AI_pacman">Read More</a>
-            </div>
-            <div class="card">
-                <h3>Natural Language Processing using FastText</h3>
-                <p>Using FastText and euclidian vector differnce to predict category 
-                    of words.                </p>
-                <a href="./NLP_FT">Read More</a>
-            </div>
+            <!--<button class="load-more-btn" onclick="loadMore('projects')">Load More Projects</button>
+            <button class="show-less-btn" onclick="showLess('projects')" style="display:none;">Show Less</button>-->
+        </section>
 
-            <div class="card">
-                <h3>Data Processing of ETF's in R</h3>
-                <p>Using data proccesing in R, make statistical analysis of 95 ETF's </p>
-                <a href="./ETF_R">Read More</a>
+        <section id="sweprojects" class="section-card">
+            <h2>Software Projects</h2>
+            <div class="projects-container">
+                <div class="card">
+                    <h3>Hand detector, used for egonomic office practice</h3>
+                    <p>Give peop-le better ergonomic office pratice, by forcing them to use
+                        the hand as a mouse.</p>
+                    <a href="./ergonomic">Read More</a>
+                </div>
+                <div class="card">
+                    <h3>TBA...</h3>
+                    <p>Project magagement system</p>
+                    <a href="./projects">Read More</a>
+                </div>
             </div>
+            <!-- Åbener når jeg har mere end 4 projecter-->
+            <!--
+            <button class="load-more-btn" onclick="loadMore('sweprojects')">Load More Projects</button>
+            <button class="show-less-btn" onclick="showLess('sweprojects')" style="display:none;">Show Less</button>
+            -->
+        </section>
+    </main>
 
-           
-        </div>
-        <button class="load-more-btn" onclick="loadMore('projects')">Load More Projects</button>
-        <button class="show-less-btn" onclick="showLess('projects')" style="display:none;">Show Less</button>
-
-
-    </section>
-
-    <section id="sweprojects">
-        <h2>Software Projects</h2>
-        <div class="projects-container">
-            <div class="card">
-                <h3>Hand detector, used for egonomic office practice</h3>
-                <p>Give peop-le better ergonomic office pratice, by forcing them to use 
-                    the hand as a mouse
-
-                </p>
-                <a href="./ergonomic">Read More</a>
-            </div>
-            <div class="card">
-                <h3>TBA...</h3>
-                <p>Project magagement system</p>
-                <a href="./projects">Read More</a>
-            </div>
-            
-                        
-        </div>
-        <!-- Åbener når jeg har mere end 4 projecter-->
-        <!--<button class="load-more-btn" onclick="loadMore('sweprojects')">Load More Projects</button>
-        <button class="show-less-btn" onclick="showLess('sweprojects')" style="display:none;">Show Less</button>-->
-    </section>
     <script src="script.js"></script>
+
     <footer>
-        <p>&copy; 2026 Tobias Lundholm Skjervedal</p>
+        <div class="page">
+            <p>&copy; 2026 Tobias Lundholm Skjervedal</p>
+        </div>
     </footer>
-    <script src="path/to/your/script.js" defer></script>
 </body>
 </html>

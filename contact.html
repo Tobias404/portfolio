@@ -4,38 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
-    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Contact Me</h1>
-        <nav>
-            <ul>
-                <li><a href="./">Home</a></li>
-                <li><a href="./projects">Projects</a></li>
-                <li><a href="./skills">Skills</a></li>
-                <li><a href="./blogs">Blogs</a></li>
-            </ul>
-        </nav>
+        <div class="header-content page">
+            <div class="branding">
+                <h1>Contact Me</h1>
+                <p class="tagline">Let’s collaborate on data-driven ideas and AI solutions.</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="./projects">Projects</a></li>
+                    <li><a href="./skills">Skills</a></li>
+                    <li><a href="./blogs">Blogs</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="contact-form">
-        <form action="https://formspree.io/f/mbjngvgy" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    <main class="page">
+        <section id="contact-form" class="section-card">
+            <form action="https://formspree.io/f/mbjngvgy" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
 
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
     <script src="script.js"></script>
     <footer>
-        <p>&copy; 2026 Tobias Lundholm Skjervedal</p>
+        <div class="page">
+            <p>&copy; 2026 Tobias Lundholm Skjervedal</p>
+        </div>
     </footer>
 
     <script>

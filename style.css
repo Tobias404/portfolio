@@ -1,152 +1,350 @@
 /* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
 body, html {
-   
+    margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #14191E;
-    color: #ffffff;
+    font-family: 'Inter', 'Arial', sans-serif;
+    background-color: #0b0f14;
+    color: #e8ecf3;
     line-height: 1.6;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+a {
+    color: inherit;
+}
+
+p {
+    margin: 0 0 16px;
+}
 
 /* Header Styles */
 header {
-    background: #14191E;
+    background: radial-gradient(circle at top, #1a2230 0%, #0b0f14 55%);
     color: #fff;
-    padding-bottom: 20px;
-    padding-top: 10px;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.page {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
 
 .header-content {
-    text-align: center;
-    padding: 0px 20px;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
 }
 
-header h1 {
+.branding h1 {
     margin: 0;
-    color: #4ecca3;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: #f8fbff;
+    letter-spacing: -0.02em;
 }
 
-header p {
-    color: #ccc;
-    margin-top: 10px;
+.tagline {
+    margin: 10px 0 0;
+    color: #9fb0c7;
+    font-size: 1rem;
 }
 
-.content-wrapper {
-    max-width: 768px;
-    margin: auto; /* Centers the content */
-    padding: 20px; /* Adds padding inside the container */
-}
-
-/* If you're using direct elements without a specific class, you can target them individually or use a more general approach */
-body > * {
-    max-width: 768px;
-    margin: auto; /* This targets all direct children of <body> */
-    padding: 20px;
-}
-
-/* Adjustments for full-width header or footer if needed */
-header, footer {
-    max-width: 100%;
-    margin: auto;
-}
 /* Navigation Styles */
 nav ul {
     padding: 0;
     list-style: none;
-    text-align: center;
-    margin-top: 20px;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: flex-end;
+    margin: 0;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #e8ecf3;
     text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 1px solid rgba(232, 236, 243, 0.12);
+    transition: all 0.3s ease;
+    font-weight: 500;
 }
 
 nav ul li a:hover {
-    background-color: #4ecca3;
+    background-color: rgba(78, 204, 163, 0.15);
+    border-color: rgba(78, 204, 163, 0.6);
+    color: #4ecca3;
 }
 
 /* Section Styles */
+main {
+    padding: 40px 0 20px;
+}
+
 section {
-    padding: 0px 20px;
-    text-align: center;
+    text-align: left;
+}
+
+.section-card {
+    background: rgba(18, 26, 36, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 20px;
+    padding: 32px;
+    margin-bottom: 28px;
+    box-shadow: 0 20px 40px rgba(4, 8, 14, 0.45);
+}
+
+.section-card h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #f8fbff;
+}
+
+.section-card p {
+    color: #c7d3e2;
+}
+
+.section-card ul,
+.section-card ol {
+    margin: 0 0 16px;
+    padding-left: 20px;
+    color: #c7d3e2;
+}
+
+.section-card li {
+    margin-bottom: 8px;
 }
 
 /* Button Style */
 .btn {
-    background-color: #4ecca3;
-    color: #14191E;
-    padding: 10px 25px;
+    background: linear-gradient(135deg, #4ecca3, #53b3f8);
+    color: #0b0f14;
+    padding: 12px 28px;
     text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    transition: opacity 0.3s;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    box-shadow: 0 12px 24px rgba(82, 204, 196, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn:hover {
-    opacity: 0.8;
+    transform: translateY(-2px);
+    box-shadow: 0 16px 28px rgba(82, 204, 196, 0.35);
 }
 
 /* Project List Styles */
 .project-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .project-summary {
-    background: #1a2229;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    width: calc(50% - 40px);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    transition: transform 0.2s ease-in-out;
+    background: rgba(11, 15, 20, 0.75);
+    margin: 0;
+    padding: 20px;
+    border-radius: 16px;
+    width: calc(50% - 10px);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease;
 }
 
 .project-summary:hover {
     transform: translateY(-5px);
+    box-shadow: 0 16px 26px rgba(4, 8, 14, 0.4);
 }
-
-
 
 .project-summary a {
-    color: #4ecca3;
     font-weight: bold;
     text-decoration: none;
+
+    background: linear-gradient(160deg, #4ecca3, #2fa4c7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
+
 .project-summary h3 {
-    color: #ccc;
+    color: #f0f4fa;
 }
 
 .project-summary p {
-    color: #ccc;
+    color: #c1ccdb;
+}
+
+.projects-container,
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.card,
+.blog-preview,
+.skill-category {
+    background: rgba(11, 15, 20, 0.75);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease;
+}
+
+.card:hover,
+.blog-preview:hover,
+.skill-category:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 26px rgba(4, 8, 14, 0.35);
+}
+
+.card a,
+.blog-preview a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+    font-weight: 600;
+    text-decoration: none;
+
+    background: linear-gradient(160deg, #4ecca3, #2fa4c7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.blog-preview h2 {
+    margin-top: 0;
+    color: #f8fbff;
+}
+
+.load-more-btn,
+.show-less-btn,
+button {
+    background: rgba(78, 204, 163, 0.18);
+    color: #e8ecf3;
+    border: 1px solid rgba(78, 204, 163, 0.4);
+    padding: 10px 20px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.load-more-btn:hover,
+.show-less-btn:hover,
+button:hover {
+    background: rgba(78, 204, 163, 0.35);
+    transform: translateY(-2px);
+}
+
+article.section-card,
+.post-article {
+    max-width: 900px;
+    margin: 0 auto 32px;
+}
+
+.post-date {
+    color: #9fb0c7;
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+}
+
+.post-content h2,
+.post-content h3 {
+    color: #f8fbff;
+    margin-top: 24px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 24px;
+    background: rgba(11, 15, 20, 0.7);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+th {
+    color: #f8fbff;
+    background: rgba(26, 34, 48, 0.8);
+}
+
+form {
+    display: grid;
+    gap: 12px;
+}
+
+label {
+    font-weight: 600;
+    color: #d6deea;
+}
+
+input,
+textarea {
+    background: rgba(11, 15, 20, 0.65);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 12px 14px;
+    color: #e8ecf3;
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: rgba(78, 204, 163, 0.6);
+    box-shadow: 0 0 0 3px rgba(78, 204, 163, 0.15);
 }
 
 /* Footer Styles */
 footer {
-    background-color: #14191E;
-    color: #fff;
+    background-color: #0b0f14;
+    color: #9fb0c7;
     text-align: center;
-    padding: 20px;
+    padding: 24px 0 40px;
     margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 @media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .section-card {
+        padding: 24px;
+    }
+
     .project-summary {
-        width: 50%;
+        width: 100%;
     }
 }
-
-

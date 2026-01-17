@@ -4,16 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Post Title</title>
-    <link rel="stylesheet" href="blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Hand detector, used for egonomic office pratice</h1>
+        <div class="header-content page">
+            <div class="branding">
+                <h1>Hand detector, used for egonomic office pratice</h1>
+                <p class="tagline">Touch-free interactions for healthier office workflows.</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="./projects">Projects</a></li>
+                    <li><a href="./skills">Skills</a></li>
+                    <li><a href="./blogs">Blogs</a></li>
+                    <li><a href="./contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <article>
-        <p class="post-date">Posted on: February 5, 2024</p>
-        <section class="post-content">
+    <main class="page">
+        <article class="section-card post-article">
+            <p class="post-date">Posted on: February 5, 2024</p>
+            <section class="post-content">
         
 
         <p>In the modern workspace, where digital interfaces dominate our daily tasks, the importance of ergonomic practices cannot be overstated. As we delve into the future of workplace health, a groundbreaking project emerges, promising to redefine our interaction with technology and mitigate the growing concern of musculoskeletal disorders among office workers. This blog explores the innovative journey of developing a touch-free interaction system designed to foster a healthier, more comfortable work environment.
@@ -40,11 +58,14 @@
 
 
 
-        </section>
-    </article>
+            </section>
+        </article>
+    </main>
     <script src="script.js"></script>
     <footer>
-        <p>&copy; 2026 Tobias Lundholm Skjervedal</p>
+        <div class="page">
+            <p>&copy; 2026 Tobias Lundholm Skjervedal</p>
+        </div>
     </footer>
 </body>
 </html>

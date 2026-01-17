@@ -4,64 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Skills</title>
-    <link rel="stylesheet" href="skills.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>List Of My Skills</h1>
-        <nav>
-            <ul>
-                <li><a href="./">Home</a></li>
-                <li><a href="./projects">Projects</a></li>
-                <li><a href="./blogs">Blogs</a></li>
-                <li><a href="./contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-content page">
+            <div class="branding">
+                <h1>List Of My Skills</h1>
+                <p class="tagline">A mix of technical tooling and people-focused strengths.</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="./projects">Projects</a></li>
+                    <li><a href="./blogs">Blogs</a></li>
+                    <li><a href="./contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="skills">
-        <div class="skills-container">
-            <div class="skill-category">
-                <h3>Technical Skills</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>R</li>
-                    <li>C++</li>   
-                    <li>Java</li> 
-                    <li>VBA</li>                                
-                    <li>Pytorch</li>
-                    <li>Scikit-learn</li>
-                    <li>Matplotlib</li>
-                    <li>Data prepping</li>
-                    <li>Sympy</li>
-                    <li>Scipy</li>
-                    <li>SQL</li>
-                    <li>Pandas</li>
-                    <li>Data handling </li>
-                    <li>Power bi</li>
-                    <li>Numpy</li>
-                    
-                    
-                </ul>
+    <main class="page">
+        <section id="skills" class="section-card">
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>R</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>VBA</li>
+                        <li>Pytorch</li>
+                        <li>Scikit-learn</li>
+                        <li>Matplotlib</li>
+                        <li>Data prepping</li>
+                        <li>Sympy</li>
+                        <li>Scipy</li>
+                        <li>SQL</li>
+                        <li>Pandas</li>
+                        <li>Data handling</li>
+                        <li>Power bi</li>
+                        <li>Numpy</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Problem-solving</li>
+                        <li>Communication</li>
+                        <li>Teamwork</li>
+                        <li>Adaptability</li>
+                        <li>Analytical thinking</li>
+                        <li>Stress management</li>
+                        <!-- More soft skills -->
+                    </ul>
+                </div>
+                <!-- Additional skill categories as needed -->
             </div>
-            <div class="skill-category">
-                <h3>Soft Skills</h3>
-                <ul>
-                    <li>Problem-solving</li>
-                    <li>Communication</li>
-                    <li>Teamwork</li>
-                    <li>Adaptability</li>
-                    <li>Analytical thinking</li>
-                    <li>Stress management</li>
-                    <!-- More soft skills -->
-                </ul>
-            </div>
-            <!-- Additional skill categories as needed -->
-        </div>
-    </section>
+        </section>
+    </main>
     <script src="script.js"></script>
     <footer>
-        <p>&copy; 2026 Tobias Lundholm Skjervedal</p>
+        <div class="page">
+            <p>&copy; 2026 Tobias Lundholm Skjervedal</p>
+        </div>
     </footer>
 </body>
 </html>

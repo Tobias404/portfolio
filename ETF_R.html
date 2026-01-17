@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+        <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Post Title</title>
-    <link rel="stylesheet" href="blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Data Processing of ETF's in R</h1>
+        <div class="header-content page">
+            <div class="branding">
+                <h1>Data Processing of ETF's in R</h1>
+                <p class="tagline">Statistical insights from real-world ETF returns.</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="./projects">Projects</a></li>
+                    <li><a href="./skills">Skills</a></li>
+                    <li><a href="./blogs">Blogs</a></li>
+                    <li><a href="./contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <article>
-        <p class="post-date">Posted on: February 5, 2024</p>
-        <section class="post-content">
+    <main class="page">
+        <article class="section-card post-article">
+            <p class="post-date">Posted on: February 5, 2024</p>
+            <section class="post-content">
             
         <p>This blog post explores a comprehensive statistical analysis project conducted on a dataset comprising weekly returns of 95 ETFs over a span of 454 weeks from May 2006 to May 2015. The analysis delves into data quality, empirical distribution, and performance metrics of selected ETFs, leveraging statistical methods to examine their average returns, variance, and covariances. Additionally, it explores portfolio optimization techniques to maximize returns while managing risk, providing insights into effective investment strategies.</p>
 
@@ -31,11 +49,14 @@
         <h2>Conclusion</h2>
         <p>The analysis underscores the importance of statistical methods in understanding financial data and guiding investment decisions. It demonstrates how different ETFs exhibit unique risk-return profiles, necessitating tailored portfolio strategies to maximize gains. The project illustrates the critical role of empirical distribution analysis, covariance assessment, and portfolio optimization in financial analytics, offering valuable insights for investors seeking to optimize their investment portfolios.</p>
     
-        </section>
-    </article>
+            </section>
+        </article>
+    </main>
     <script src="script.js"></script>
     <footer>
-        <p>&copy; 2026 Tobias Lundholm Skjervedal</p>
+        <div class="page">
+            <p>&copy; 2026 Tobias Lundholm Skjervedal</p>
+        </div>
     </footer>
 </body>
 </html>

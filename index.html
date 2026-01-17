@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tobias Lundholm Skjervedal's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <h1>Tobias Lundholm Skjervedal</h1>
-
-            
+        <div class="header-content page">
+            <div class="branding">
+                <h1>Tobias Lundholm Skjervedal</h1>
+                <p class="tagline">Human-Centered AI &amp; Data Science • Instructor • AI in Practice & Data Science</p>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="./projects">Projects</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
                     <li><a href="./skills">Skills</a></li>
                     <li><a href="./blogs">Blogs</a></li>
                     <li><a href="./contact">Contact</a></li>
@@ -22,38 +26,40 @@
             </nav>
         </div>
     </header>
+    <main class="page">
+        <section id="about-me" class="section-card">
+            <h2>About Me</h2>
+            <p>With a passion for data driven solutions and a knack for problem solving, I've developed a diverse portfolio of projects showcasing my expertise in data analysis, machine learning algorithms, and predictive modeling. My journey in the field of data science is driven by curiosity and the pursuit of excellence.</p>
+            <p>Pursuing my passion in Artificial Intelligence and Data Science, I am advancing towards completing my Master's degree, in Human-Centered Artificial Intelligence, at the Technical University of Denmark by 2028, while working full-time at andersjensenorg as an Automation &amp; AI instructor. I aim to deepen my expertise in machine learning, aspiring to innovate and solve real world challenges within this vibrant field.</p>
+            <a href="./skills" class="btn">Learn More About My Skills</a>
+        </section>
 
-    <section id="about-me">
-        <h2>About Me</h2>
-        <p>With a passion for data driven solutions and a knack for problem solving, I've developed a diverse portfolio of projects showcasing my expertise in data analysis, machine learning algorithms, and predictive modeling. My journey in the field of data science is driven by curiosity and the pursuit of excellence.</p>
-        <p>Pursuing my passion in Artificial Intelligence and Data Science, I am advancing towards completing my Master's degree, in Human-Centered Artificial Intelligence, at the Technical University of Denmark by 2028, while working full-time at andersjensenorg as an Automation & AI instructor. I aim to deepen my expertise in machine learning, aspiring to innovate and solve real world challenges within this vibrant field.</p>
-        <a href="./skills" class="btn">Learn More About My Skills</a>
-    </section>
-
-    <section id="featured-projects">
-        <h2>Featured Projects</h2>
-        <p>Explore a selection of my projects where I've applied data science and machine learning techniques to solve real-world problems.</p>
-        <div class="project-list">
-            <!-- Placeholder for project highlights; Replace with actual project details -->
-            <div class="project-summary">
-                <h3>Finding correlation between heart rate and frustration</h3>
-                <p>Examined the interaction between frustration levels and heart rate during
-                    two-person puzzle-solving tasks.</p>
-                    <a href="./heart_data">Read more</a>
+        <section id="featured-projects" class="section-card">
+            <h2>Featured Projects</h2>
+            <p>Explore a selection of my projects where I've applied data science and machine learning techniques to solve real-world problems.</p>
+            <div class="project-list">
+                <!-- Placeholder for project highlights; Replace with actual project details -->
+                <div class="project-summary">
+                    <h3>Finding correlation between heart rate and frustration</h3>
+                    <p>Examined the interaction between frustration levels and heart rate during
+                        two-person puzzle-solving tasks.</p>
+                        <a href="./heart_data">Read more</a>
+                </div>
+                <!-- Repeat for other projects -->
+                <div class="project-summary">
+                    <h3>Regression and classification on french wine</h3>
+                    <p>Used regression to predict the alcohol content of wine. And classification
+                        to predict the origin of the wines.</p>
+                        <a href="./french_wine">Read more</a>
+                </div>
             </div>
-            <!-- Repeat for other projects -->
-            <div class="project-summary">
-                <h3>Regression and classification on french wine</h3>
-                <p>Used regression to predict the alcohol content of wine. And classification 
-                    to predict the origin of the wines. </p>
-                    <a href="./french_wine">Read more</a>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <script src="script.js"></script>
-      </script>
     <footer>
-        <p>&copy; 2026 Tobias Lundholm Skjervedal</p>
+        <div class="page">
+            <p>&copy; 2026 Tobias Lundholm Skjervedal</p>
+        </div>
     </footer>
 </body>
 </html>

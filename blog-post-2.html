@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+        <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Regression and Classification on French Wine</title>
-    <link rel="stylesheet" href="blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Regression and Classification on French Wine</h1>
-        <p class="post-date">Posted on: February 9, 2024</p>
+        <div class="header-content page">
+            <div class="branding">
+                <h1>Regression and Classification on French Wine</h1>
+                <p class="tagline">Wine chemistry meets regression and classification modeling.</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="./projects">Projects</a></li>
+                    <li><a href="./skills">Skills</a></li>
+                    <li><a href="./blogs">Blogs</a></li>
+                    <li><a href="./contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <article>
+    <main class="page">
+        <article class="section-card post-article">
+            <p class="post-date">Posted on: February 9, 2024</p>
 
         <p>In this blog, we delve into an insightful exploration of machine learning and data mining techniques applied to a wine dataset, aimed at predicting alcohol content and classifying wine cultivators. We harness a dataset comprising 178 wine instances from three different Italian cultivators, analyzed through features such as alcohol percentage, malic acid, and phenols. The study employs methods including linear regression with regularization and artificial neural networks (ANNs), underpinned by cross-validation for error estimation. Our findings underscore the efficacy of ANNs in regression tasks and explore classification performance, providing a comprehensive comparison of model accuracies. This project not only highlights the robustness of machine learning in real-world applications but also contributes to the ongoing discourse in statistical pattern recognition, offering a practical understanding of various methodologies.</p>
 
@@ -148,10 +166,13 @@
 
 
         </section>
-    </article>
+        </article>
+    </main>
 
     <footer>
-        <p>&copy; 2026 Tobias Lundholm Skjervedal</p>
+        <div class="page">
+            <p>&copy; 2026 Tobias Lundholm Skjervedal</p>
+        </div>
     </footer>
 </body>
 </html>
