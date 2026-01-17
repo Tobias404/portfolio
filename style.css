@@ -171,16 +171,45 @@ section {
     box-shadow: 0 16px 26px rgba(4, 8, 14, 0.4);
 }
 
+/* LINK GRADIENT (delayed second color) + underline hover */
 .project-summary a {
-    font-weight: bold;
+    position: relative;
+    font-weight: 700;
     text-decoration: none;
 
-    background: linear-gradient(160deg, #4ecca3, #2fa4c7);
+    background: linear-gradient(
+        160deg,
+        #4ecca3 0%,
+        #4ecca3 60%,
+        #2fa4c7 100%
+    );
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+
+    transition: filter 0.2s ease;
 }
 
+.project-summary a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #4ecca3, #2fa4c7);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease;
+}
+
+.project-summary a:hover {
+    filter: brightness(1.08);
+}
+
+.project-summary a:hover::after {
+    transform: scaleX(1);
+}
 
 .project-summary h3 {
     color: #f0f4fa;
@@ -214,8 +243,10 @@ section {
     box-shadow: 0 16px 26px rgba(4, 8, 14, 0.35);
 }
 
+/* Same gradient treatment for card/blog links */
 .card a,
 .blog-preview a {
+    position: relative;
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -223,10 +254,34 @@ section {
     font-weight: 600;
     text-decoration: none;
 
-    background: linear-gradient(160deg, #4ecca3, #2fa4c7);
+    background: linear-gradient(
+        160deg,
+        #4ecca3 0%,
+        #4ecca3 60%,
+        #2fa4c7 100%
+    );
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+
+    transition: filter 0.2s ease;
+}
+
+.card a::after,
+.blog-preview a::after {
+    content: "→";
+    margin-left: 2px;
+    transition: transform 0.2s ease;
+}
+
+.card a:hover,
+.blog-preview a:hover {
+    filter: brightness(1.08);
+}
+
+.card a:hover::after,
+.blog-preview a:hover::after {
+    transform: translateX(2px);
 }
 
 .blog-preview h2 {
@@ -330,6 +385,7 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
+/* Existing breakpoint (kept) */
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
@@ -346,5 +402,64 @@ footer {
 
     .project-summary {
         width: 100%;
+    }
+}
+
+/* Added: mobile-specific tuning for the screenshot layout */
+@media (max-width: 520px) {
+    .page {
+        padding: 0 16px;
+    }
+
+    header {
+        padding: 24px 0 18px;
+    }
+
+    .branding h1 {
+        font-size: clamp(1.8rem, 8vw, 2.4rem);
+        line-height: 1.05;
+        letter-spacing: -0.02em;
+    }
+
+    .tagline {
+        font-size: 0.95rem;
+        line-height: 1.35;
+        margin-top: 8px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav ul li a {
+        padding: 10px 14px;
+        font-size: 0.95rem;
+    }
+
+    main {
+        padding: 28px 0 16px;
+    }
+
+    .section-card {
+        padding: 18px;
+        border-radius: 18px;
+    }
+
+    .section-card h2 {
+        font-size: 1.65rem;
+        line-height: 1.1;
+        margin-bottom: 12px;
+    }
+
+    /* Improve paragraph readability on small screens */
+    .section-card p,
+    .project-summary p,
+    .card p,
+    .blog-preview p {
+        font-size: 0.98rem;
+        line-height: 1.65;
+        max-width: 42ch;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
