@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Books — Tobias Lundholm Skjervedal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-content page">
+      <div class="branding">
+        <h1>Books</h1>
+        <p class="tagline">A small library of what I’ve read in my free time.</p>
+      </div>
+
+      <nav>
+        <ul>
+             <li><a href="./">Home</a></li>
+             <li><a href="./projects">Projects</a></li>
+             <li><a href="./skills">Skills</a></li>
+             <li><a href="./blogs">Blogs</a></li>
+             <li><a href="./contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="section-card">
+      <h2>Read</h2>
+      <p>Click a cover to open it.</p>
+
+      <div class="books-grid">
+        <!-- Add your filenames here -->
+        <div class="book-tile reading">
+        <a class="book-cover" href="books_pics/bayes.png" target="_blank" rel="noopener">
+            <img src="books_pics/bayes.png" alt="Book cover" loading="lazy">
+            <span class="book-badge">Currently reading</span>
+        </a>
+        <div class="book-meta">
+            <div class="book-rating" aria-label="Rating: 0 out of 5">
+            <span class="stars" data-rating="0"></span>
+            <span class="rating-text">TBH</span>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="book-tile">
+        <a class="book-cover" href="books_pics/sbi.png" target="_blank" rel="noopener">
+            <img src="books_pics/sbi.png" alt="Book cover" loading="lazy">
+        </a>
+
+        <div class="book-meta">
+            <div class="book-rating" aria-label="Rating: 4 out of 5">
+            <span class="stars" data-rating="4"></span>
+            <span class="rating-text">4/5</span>
+            </div>
+        </div>
+        </div>
+
+        <div class="book-tile">
+        <a class="book-cover" href="books_pics/build.png" target="_blank" rel="noopener">
+            <img src="books_pics/build.png" alt="Book cover" loading="lazy">
+        </a>
+
+        <div class="book-meta">
+            <div class="book-rating" aria-label="Rating: 5 out of 5">
+            <span class="stars" data-rating="5"></span>
+            <span class="rating-text">5/5</span>
+            </div>
+        </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="page">&copy; 2026 Tobias Lundholm Skjervedal</div>
+  </footer>
+</body>
+</html>
