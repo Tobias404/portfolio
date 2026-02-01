@@ -569,5 +569,9 @@ footer {
   .book-cover img {
     height: 210px;
   }
+  nav ul li a {
+        font-size: 0.95rem;
+        border-radius: 14px;
+    }
 }
 
